@@ -1,0 +1,27 @@
+# Show-specific speaker alias table (ASSUMPTION: derived from reading the speaker labels in the pack).
+# Left = raw label as written in the script, right = canonical character.
+# `hidden` lists labels where the audience does not yet know the character's name.
+canonical:
+  JULIANA: Juliana
+  LADY JULIANA: Juliana
+  CLARISSA: Clarissa
+  LADY CLARISSA: Clarissa
+  LADY IN GOLD GOWN: Clarissa
+  GERALD: Gerald
+  THE FORMER GROOM: Gerald
+  ALEXANDER: Alexander
+  MYSTERIOUS BEARDED MAN: Alexander
+  THE BEARDED STRANGER: Alexander
+  CATHERINE: Catherine
+  LADY CATHERINE: Catherine
+  LORD ASHCROFT: Lord Ashcroft
+  LADY ASHCROFT: Lady Ashcroft
+  LORD HARRINGTON: Lord Harrington
+  LADY HARRINGTON: Lady Harrington
+  MATRIARCH: Matriarch
+  NOBLE MATRIARCH: Matriarch
+  HIGH PRIEST: High Priest
+  THE PRIEST: Priest
+hidden:
+  - MYSTERIOUS BEARDED MAN
+  - THE BEARDED STRANGER

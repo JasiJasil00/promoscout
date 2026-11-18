@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.llm_cache/
+# The screenplay pack is confidential (Kuku content). Do not commit it or outputs quoting it.
+data/
+outputs/

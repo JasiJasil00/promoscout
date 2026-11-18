@@ -1,0 +1,18 @@
+# All tunables live here. Weights are INITIAL ASSUMPTIONS, to be revisited after manual review.
+weights: {hook: 0.30, cliffhanger: 0.30, clarity: 0.25, emotion: 0.15}
+duration: {min: 20.0, max: 60.0}
+candidates:
+  min_dialogue_lines: 3        # windows with less dialogue are not promo-like
+  max_shortlist: 150           # how many candidates go to the LLM / the report
+  per_episode_cap: 8           # shortlist diversity guard
+  joined_max: 40               # cap on multi-segment candidates
+  short_segment: {min: 8.0, max: 30.0}
+selection:
+  approved_target: 20          # how many promos to approve
+  min_total: 0.0               # raise to demand a quality floor
+  tiers: {A: 5, B: 10}         # first 5 = tier A, next 10 = B, rest C
+  diversity_penalty: {same_episode: 3.0, same_scene: 5.0}
+dedupe: {time_iou: 0.30, text_cosine: 0.60}
+audit: {weak_hook: 4.0, weak_cliffhanger: 4.0, poor_clarity: 5.0, disagreement: 4.0}
+llm: {batch_size: 8, min_interval_s: 4.0, max_retries: 4}
+aliases_file: aliases.yaml
